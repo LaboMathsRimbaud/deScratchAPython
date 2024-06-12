@@ -1,0 +1,4 @@
+remplacer 'demander ... et attendre' :
+
+print('la question')
+variable = input(' > ')

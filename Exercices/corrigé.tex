@@ -1,0 +1,139 @@
+\documentclass[12pt,oneside,french]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+    \geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=1.5cm,rmargin=1.5cm}
+\usepackage{lmodern}
+    \renewcommand{\familydefault}{\sfdefault}
+\usepackage[french]{babel}
+    \DecimalMathComma
+    \renewcommand{\FrenchLabelItem}{\textbullet}
+    \parindent=0cm
+\usepackage{multicol}
+    \setlength{\columnsep}{0.5cm}
+    \pagestyle{empty}
+\usepackage{enumerate}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usepackage{amsthm}
+    \theoremstyle{definition}
+        \newtheorem{exo}{Exercice}
+\usepackage{tabularx}
+    \renewcommand{\arraystretch}{1.4}
+\usepackage{hyperref}
+    \hypersetup{
+        colorlinks=true,
+        linkcolor=black,
+        filecolor=black,      
+        urlcolor=blue,
+    }
+\usepackage{scratch3}
+    \setscratch{baseline=c, scale=0.88}
+\usepackage{listings}
+    \lstset{
+        language=Python,
+        showstringspaces=false,
+        basicstyle=\ttfamily,
+        keywordstyle=\bfseries\color{violet},
+        commentstyle=\itshape\color{black!40},
+        identifierstyle=\color{black},
+        numberstyle=\color{green!40!black},
+        inputencoding=utf8,
+        extendedchars=true,
+        breaklines,
+        literate=
+            {à}{{\`a}}1
+            {è}{{\`e}}1
+            {é}{{\'e}}1
+            {ê}{{\^e}}1
+            {ë}{{\"e}}1
+            {â}{{\^a}}1
+            {ö}{{\"o}}1
+            {ô}{{\^o}}1
+            {î}{{\^i}}1
+            {û}{{\^u}}1
+            {ç}{{\c{}}}1
+            {œ}{{\oe{}}}1
+            {ù}{{\`u}}1
+            {°}{{\up{$\circ$}}}1,  
+        stringstyle=\color{green!40!black},
+        }
+    
+    
+\newcommand{\ligne}{\noindent \rule{\linewidth}{.5pt}}
+\newcommand{\pointilles}{\noindent \rule{0pt}{1cm}\makebox[\linewidth]{\dotfill}}
+\newcommand{\interligne}{\rule[-8pt]{0pt}{25pt}}
+\newcommand{\reponse}[2]{\noindent \interligne \dotfill}
+\newcommand{\minireponse}[1]{\makebox[1cm]{\interligne \dotfill}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{center}\large Corrigé des exercices.\end{center}
+
+\begin{exo}[Programme de calcul]~
+    \lstinputlisting{exo1.py}
+\end{exo}
+
+\begin{exo}[perroquet]~
+    \lstinputlisting{Exo2020-1.py}
+\end{exo}
+
+\begin{exo}[donne moi un prénom]~
+    \lstinputlisting{Exo2020-2.py}
+\end{exo}
+
+\begin{exo}[puissance]~
+    \lstinputlisting{exo2.py}
+\end{exo}
+
+\begin{exo}[écho]~
+    \lstinputlisting{Exo2020-3.py}
+\end{exo}
+
+\begin{exo}[compte à rebours]~
+    \lstinputlisting{Exo2020-4.py}
+\end{exo}
+
+\begin{exo}[téléchargement]~
+    \lstinputlisting{Exo2021-2.py}
+\end{exo}
+
+\newpage
+
+\begin{exo}[table de multiplication]~
+    \lstinputlisting{exo3.py}
+\end{exo}
+
+\begin{exo}[sondage]~
+    \lstinputlisting{Exo2020-5.py}
+\end{exo}
+
+\begin{exo}[nombre positif]~
+    \lstinputlisting{Exo2020-6.py}
+\end{exo}
+
+\begin{exo}[Pythagore]~
+    \lstinputlisting{exo4.py}
+\end{exo}
+
+\begin{exo}[carrés parfaits]~
+    \lstinputlisting{exo5.py}
+\end{exo}
+
+\newpage
+
+\begin{exo}[PGCD]~
+    \lstinputlisting{exo6.py}
+\end{exo}
+
+\begin{exo}[plus grand de 3 nombres]~
+    \lstinputlisting{exo7.py}
+\end{exo}
+
+\begin{exo}[bientôt Noël]~
+    \lstinputlisting{Exo2021-1.py}
+\end{exo}
+
+\end{document}
